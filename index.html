@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="image-container">
+        <div class="logo-container">
+          <img src="./logo.svg" alt="logo" />
+          <h1>VJL</h1>
+        </div>
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/es/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Halie West</a
+          >
+          on
+          <a
+            href="https://unsplash.com/es/fotos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+      <div class="form-message-container">
+        <div class="message">
+          <h2>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sing up
+            <em>now</em> to get started.
+          </h2>
+          <h2>You <em>know</em> you want to.</h2>
+        </div>
+        <div class="form-container">
+          <h2>Let's do this!</h2>
+          <form class="form" method="post" action="/user" id="form">
+            <div class="column">
+              <div class="field">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" name="first-name" required />
+              </div>
+              <div class="field">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" name="last-name" required />
+              </div>
+              <div class="field">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input
+                  type="text"
+                  minlength="1"
+                  maxlength="18"
+                  id="phone-number"
+                  name="phone-number"
+                />
+              </div>
+              <div class="field">
+                <label for="password">PASSWORD</label>
+                <input
+                  class="error"
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                />
+                <span class="error-message" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="password2">CONFIRM PASSWORD</label>
+                <input
+                  class="error"
+                  type="password"
+                  id="password2"
+                  name="password2"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="button-container">
+          <button id="submitButton" type="submit" form="form">
+            Create Account
+          </button>
+          <p>Already have an account? <a href="/login">Log in</a></p>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
